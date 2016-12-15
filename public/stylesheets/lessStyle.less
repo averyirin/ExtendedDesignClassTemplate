@@ -2,13 +2,16 @@
 npm install -g less
     USE
 lessc public/stylesheets/lessStyle.less > public/stylesheets/lessStyle.css
+
 */
 /* Include Library */
 /*
 @import "library"; // library.less
 @import "typo.css";
 */
+
 /* Variables */
+
 @background-color: #444444;
 @red: #ee5555;
 @blue: #5555ee;
@@ -82,9 +85,11 @@ lessc public/stylesheets/lessStyle.less > public/stylesheets/lessStyle.css
 /*
 @margin: 10px;
 #blue {
-  margin: @margin - 10%;
+  margin: @margin - 10%
 }
 */
+//import error
+//@import "variables.less";
 
 body{
   background-color:@background-color;

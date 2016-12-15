@@ -58,9 +58,12 @@ lessc public/stylesheets/lessStyle.less > public/stylesheets/lessStyle.css
   background-color: fadeout(@background-color, 50%)
 }
 */
+/*
+@margin: 10px;
 #blue {
-  margin: 0px;
+  margin: @margin - 10%
 }
+*/
 body {
   background-color: #444444;
   height: 100%;

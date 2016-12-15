@@ -7,6 +7,7 @@ node-sass sassStyle.scss sassStyle.css
 sass --watch public/stylesheets/sassStyle.scss:public/stylesheets/sassStyle.css
 */
 /* Variables */
+
 $background-color: #000000;
 $red: #ee5555;
 $blue: #5555ee;
@@ -20,7 +21,7 @@ $bar-hover-text-color:#fff;
 $main-content-bg:#fff;
 
 // Mixins (Classes / Library)
-
+/*
 @mixin round($radius, $color){
   background-color:  $color;
   border-radius: $radius;
@@ -28,8 +29,9 @@ $main-content-bg:#fff;
 .well{
   @include round(100px, #444444);
 }
-
+*/
 //Extends
+/*
 .panel-heading{
   color:$panel-text-color;
   padding:20px;
@@ -46,9 +48,11 @@ $main-content-bg:#fff;
   @extend .panel-heading;
   background-color: $green;
 }
+*/
 
 
 // Nesting
+/*
 .well {
   ul {
 
@@ -64,12 +68,14 @@ $main-content-bg:#fff;
 
   }
 }
-
+*/
 
 // Functions
+/*
 .well li:hover{
   background-color: darken($background-color, 10%)
 }
+*/
 //error handling and operations
 //Syntax error: Incompatible units: '%' and 'px'
 /*
@@ -131,7 +137,7 @@ main{
   text-align: center;
   margin:auto;
 }
-/*
+
 #red .panel-heading{
   color:$panel-text-color;
   background-color: $red;
@@ -145,4 +151,4 @@ main{
 #green .panel-heading {
   color:$panel-text-color;
   background-color: $green;
-}*/
+}
