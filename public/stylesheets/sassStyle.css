@@ -7,35 +7,59 @@ node-sass sassStyle.scss sassStyle.css
 sass --watch public/stylesheets/sassStyle.scss:public/stylesheets/sassStyle.css
 */
 /* Variables */
-.well {
-  background-color: #444444;
-  border-radius: 100px; }
+body {
+  margin: 0;
+  padding: 0; }
 
-.panel-heading, #red .panel-heading, #blue .panel-heading, #green .panel-heading {
-  color: #ffffff;
-  padding: 20px; }
-
+/*
+@mixin round($radius, $color){
+  background-color:  $color;
+  border-radius: $radius;
+}
+.well{
+  @include round(100px, #444444);
+}
+*/
+/*
+.panel-heading{
+  color:$panel-text-color;
+  padding:20px;
+}
 #red .panel-heading {
-  background-color: #ee5555; }
-
+  @extend .panel-heading;
+  background-color: $red;
+}
 #blue .panel-heading {
-  background-color: #5555ee; }
-
+  @extend .panel-heading;
+  background-color: $blue;
+}
 #green .panel-heading {
-  background-color: #55ee55; }
+  @extend .panel-heading;
+  background-color: $green;
+}
+*/
+/*
+.well {
+  ul {
 
-.well ul {
-  background-color: #ee5555;
-  padding: 10px; }
-  .well ul li {
-    color: #000000;
-    background-color: #5555ee;
-    border-radius: 3px;
-    margin: 10px 0; }
+    $bar-text:#000000;
+    background-color:$red;
+    padding: 10px;
+    li {
+      color:$bar-text;
+      background-color: $blue;
+      border-radius: 3px;
+      margin: 10px 0;
+    }
 
-.well li:hover {
-  background-color: black; }
-
+  }
+}
+*/
+/*
+.well li:hover{
+  background-color: darken($background-color, 10%)
+}
+*/
 /*
 $margin: 10px;
 #blue {
@@ -83,27 +107,23 @@ main {
   padding-top: 20px;
   background-color: #fff; }
 
-.panel-heading, #red .panel-heading, #blue .panel-heading, #green .panel-heading {
+.panel-heading {
   font-size: 1.5em; }
 
 .cta {
   text-align: center;
   margin: auto; }
 
-/*
-#red .panel-heading{
-  color:$panel-text-color;
-  background-color: $red;
-}
+#red .panel-heading {
+  color: #ffffff;
+  background-color: #ee5555; }
 
 #blue .panel-heading {
-  color:$panel-text-color;
-  background-color: $blue;
-}
+  color: #ffffff;
+  background-color: #5555ee; }
 
 #green .panel-heading {
-  color:$panel-text-color;
-  background-color: $green;
-}*/
+  color: #ffffff;
+  background-color: #55ee55; }
 
 /*# sourceMappingURL=sassStyle.css.map */

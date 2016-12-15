@@ -2,6 +2,7 @@
 npm install -g less
     USE
 lessc public/stylesheets/lessStyle.less > public/stylesheets/lessStyle.css
+
 */
 /* Include Library */
 /*
@@ -9,15 +10,10 @@ lessc public/stylesheets/lessStyle.less > public/stylesheets/lessStyle.css
 @import "typo.css";
 */
 /* Variables */
-/*
-#round(@radius: 10px, @color: #4444){
-  background-color:  @color;
-  border-radius: @radius;
+.well {
+  background-color: #000000;
+  border-radius: 100px;
 }
-.well{
-  #round();
-}
-*/
 /*
 .panel-heading{
   color:@panel-text-color;

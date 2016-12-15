@@ -1,4 +1,4 @@
-cssPreProcessor = "less";
+cssPreProcessor = "sass";
 
 
 var express = require('express');
