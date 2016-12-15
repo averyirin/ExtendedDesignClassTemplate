@@ -2,6 +2,9 @@
 npm install -g node-sass
     USE
 node-sass sassStyle.scss sassStyle.css
+
+
+sass --watch public/stylesheets/sassStyle.scss:public/stylesheets/sassStyle.css
 */
 /* Variables */
 $background-color: #000000;
@@ -68,22 +71,24 @@ $main-content-bg:#fff;
   background-color: darken($background-color, 10%)
 }
 //error handling and operations
+//Syntax error: Incompatible units: '%' and 'px'
+/*
 $margin: 10px;
 #blue {
-  margin: $margin - 10%; /* Syntax error: Incompatible units: '%' and 'px' */
+  margin: $margin - 10%;
 }
-
+*/
 // operations
+/*
 $time: morning;
-a {
-  @if $time == morning {
+@if $time == morning {
     $background-color: red;
   } @else if $time == afternoon {
     $background-color: blue;
   } @else {
     $background-color: grey;
   }
-}
+*/
 
 
 body{
