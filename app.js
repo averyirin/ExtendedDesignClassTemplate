@@ -1,3 +1,44 @@
+/*
+ install nodejs
+ add nodejs to path
+
+ install ruby
+ add ruby to path
+
+ install compass
+ gem install compass
+
+ create compass project from exisiting files
+ compass init
+
+ install express
+ npm install express -g
+
+ install nodemon
+ npm install nodemon -g
+
+ install less
+ npm install less -g
+ install dependencies
+ npm install
+
+ Nagivate into /public/stylesheets
+ npm install -g node-sass
+ USE
+ node-sass sassStyle.scss sassStyle.css
+
+
+ npm install -g less
+ USE
+ lessc lessStyle.less > lessStyle.css
+
+
+ sass --watch public/stylesheets/sassStyle.scss:public/stylesheets/sassStyle.css
+
+
+
+
+ */
 cssPreProcessor = "sass";
 
 
