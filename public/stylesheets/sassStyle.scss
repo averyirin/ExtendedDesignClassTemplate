@@ -1,0 +1,127 @@
+/*  INSTALL
+npm install -g node-sass
+    USE
+node-sass sassStyle.scss sassStyle.css
+*/
+/* Variables */
+$background-color: #dddddd;
+$red: #ee5555;
+$blue: #5555ee;
+$green: #55ee55;
+$panel-text-color:#ffffff;
+$bar-color:#222;
+$bar-text:#9d9d9d;
+$bar-border:1px solid #080808;
+$bar-hover-color:#333;
+$bar-hover-text-color:#fff;
+$main-content-bg:#fff;
+
+// Mixins (Classes / Library)
+
+@mixin round($radius, $color){
+  background-color:  $color;
+  border-radius: $radius;
+}
+.well{
+  @include round(100px, '#4444');
+}
+
+//Extends
+.panel-heading{
+  color:$panel-text-color;
+  padding:20px;
+}
+#red .panel-heading {
+  @extend .panel-heading;
+  background-color: $red;
+}
+#blue .panel-heading {
+@extend .panel-heading;
+  background-color: $blue;
+}
+#green .panel-heading {
+  @extend .panel-heading;
+  background-color: $green;
+}
+
+
+// Nesting
+.well {
+  ul {
+
+    $bar-text:#000000;
+    background-color:$red;
+    padding: 10px;
+    li {
+      color:$bar-text;
+      background-color: $blue;
+      border-radius: 3px;
+      margin: 10px 0;
+    }
+
+  }
+}
+
+
+// Functions
+.well li:hover{
+  background-color: darken($background-color, 10%)
+}
+
+
+
+body{
+  background-color:$background-color;
+  height:100%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  color:$bar-text;
+  text-align: center;
+  background-color: $bar-color;
+  border:$bar-border;
+  clear:none;
+}
+.well ul{
+  list-style: none;
+}
+#customNav .navbar-nav > li > a:hover, #customNav .navbar-nav > li > a:focus {
+  background-color: $bar-hover-color;
+  color: $bar-hover-text-color;
+}
+#customNav{
+  background-color: $bar-color;
+  color: $bar-text;
+}
+
+main{
+  position: relative;
+  min-height: 100%;
+  padding-top:20px;
+  background-color:$main-content-bg;
+}
+.panel-heading{
+  font-size: 1.5em;
+}
+.cta{
+  text-align: center;
+  margin:auto;
+}
+/*
+#red .panel-heading{
+  color:$panel-text-color;
+  background-color: $red;
+}
+
+#blue .panel-heading {
+  color:$panel-text-color;
+  background-color: $blue;
+}
+
+#green .panel-heading {
+  color:$panel-text-color;
+  background-color: $green;
+}*/
